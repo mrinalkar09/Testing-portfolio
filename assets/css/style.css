@@ -1,0 +1,499 @@
+:root {
+    --raj-font: 'Rajdhani', sans-serif;
+    
+    
+    --raj-regular: 400;
+    --raj-normal: 500;
+    --raj-semibold: 600;
+    --raj-bold: 700;
+
+    --prim-color:#707070;
+    --prim-black:#000000;
+    --prim-white:#ffffff;
+
+
+}
+
+
+
+
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+}
+h1,h2.h3{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.fw-reg{font-weight:400;}
+.fw-nor{font-weight:500;}
+.fw-sb{font-weight:600;}
+.fw-b{font-weight:700;}
+
+
+.mf-10 { font-size: 10px; margin-bottom: 2px !important;}
+.mf-11 { font-size: 11px; }
+.mf-12 { font-size: 12px; margin-bottom: 2px !important;}
+.mf-13 { font-size: 13px; }
+.mf-14 { font-size: 14px; margin-bottom: 2px !important;}
+.mf-15 { font-size: 15px; }
+.mf-16 { font-size: 16px; }
+.mf-17 { font-size: 17px; }
+.mf-18 { font-size: 18px; }
+.mf-19 { font-size: 19px; }
+.mf-20 { font-size: 20px; }
+.mf-25{font-size: 25px;}
+.mf-35{
+    font-size: 35px;
+
+}
+
+
+.mrinal {
+  display: flex;
+  justify-content: space-between;
+  padding:0px 10px;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+}
+
+.left-logo img,
+.right-menu img {
+  width: 50px;
+  height:30px;
+}
+
+
+
+/* Hero Section Starts Here */
+.heroo {
+  /* border: 2px solid red; */
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-wrapper {
+  position: relative;
+  width: 195px;
+  height: 195px;
+}
+
+.bg-box {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  border: 2px solid #707070;
+  z-index: 1;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 30%, 100% 100%, 0% 100%, 15% 100%, 0% 75%, 0% 30%);
+}
+
+.bg-box2 {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  /* background:var(--prim-color); */
+  z-index: 1;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 30%, 100% 100%, 0% 100%, 15% 100%, 0% 75%, 0% 30%);
+}
+
+
+.hero-image img {
+  position: relative;
+  z-index: 2;
+  width: 89%;
+  height: auto;
+  top: 10px;
+  left: 10px;
+}
+
+.main-title{
+    font-weight:600;
+}
+
+.t-color{
+    color: #707070;
+}
+
+.greet{
+    /* border: 2px solid green; */
+    font-family:var(--raj-regular) ;
+}
+.Name{
+    font-family:var(--raj-semibold) ;
+    /* border: 2px solid green; */
+}
+.designation{
+    font-family:var(--raj-regular) ;
+    /* border: 2px solid green; */
+}
+
+.hero-social{
+    /* border:2px solid blue; */
+
+}
+.hero-social .fa-brands{
+    background: #C9C9C9;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    display: flex;                
+    align-items: center;        
+    justify-content: center;      
+
+    color: white;
+    font-size: 22px;
+}
+
+
+
+.button-area{
+    display: flex;
+    position: relative;
+    top: -20px;
+    left:15px;
+    /* justify-content: space-between */
+    height: auto;
+    /* border: 2px solid red ; */
+}
+
+
+.button{
+    width: 100% !important;
+}
+.call-bt{
+    width: 100px;
+    height: 25px;
+    background: var(--prim-color);
+    color:var(--prim-white);
+    text-align: center;    
+}
+
+.email-bt {
+    width: 100px ;
+    height: 25px;
+    border: 2px solid var(--prim-color);
+    color:var(--prim-color);
+    text-align: center;
+}
+/* Hero Section Ends Here */
+
+
+/* About Us Section Starts Here */
+.tagline-text{
+    color: var(--prim-color);
+    font-weight: var(--raj-bold);
+}
+.right{
+    /* border: 1px solid  greenyellow; */
+}
+
+.about-section p{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* About Us Section Ends Here */
+
+
+
+/* Achievement Section Starts Here */
+
+.revol-years{
+    position:absolute;
+    z-index:-2;
+    top: -70px;
+    right:10px;
+    animation: rotate360 10s linear infinite;
+
+}
+
+.gallery2-img-box{
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+
+.shape-border2 {
+    width: 100%;
+    height: 100%;
+    background: var(--prim-color);              /* border color */
+    padding: 2px;                 /* border thickness */
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        90% 0%,
+        100% 15%,
+        100% 100%,
+        0% 100%,
+        10% 100%,
+        -5% 75%,
+        0% 30%
+    );
+}
+
+.shape2 {
+    width: 100%;
+    height: 100%;
+    background: var(--prim-color);    /* inner box color */
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        90% 0%,
+        100% 15%,
+        100% 100%,
+        0% 100%,
+        10% 100%,
+        -5% 75%,
+        0% 30%
+    );
+}
+
+/* Achievement Section Ends Here */
+
+/* .container {
+    border: 1px solid orange;
+} */
+
+
+
+/* Our Services Section Starts Here */
+.card-body{
+    border: 0.5px solid var(--prim-color);
+    border-radius: 3px;
+    padding: 8px !important ;
+    overflow: hidden;
+}
+.card-title{
+    margin: 2px !important;
+    color: var(--prim-color);
+}
+.card-text{
+    margin: 0px !important;
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--prim-color);
+    font-size: 12px;
+    font-weight:var(--raj-regular);
+}
+
+
+
+.see-btnn{
+    font-weight: var(--raj-bold);
+
+}
+
+
+.explore{
+    justify-content: center;
+}
+
+.explore-btn{
+    border: 0.75px solid var(--prim-color);
+    border-radius: 2px;
+}
+
+
+.explore-text{
+    font-weight: var(--raj-bold);
+    color: var(--prim-color);
+}
+
+
+/* Our Services Section Ends Here */
+
+
+
+/* <!-- Download Brochure Section  Starts Here --> */
+
+.brochure-section{
+    background: #F3F3F3;
+    color: var(--prim-color);
+}
+
+/* <!-- Download Brochure Section  Ends Here --> */
+
+
+
+/* <!--Recent Projects Section Starts Here --> */
+.recent-proj-section{
+    color: var(--prim-color);
+}
+
+.project-roww{
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    /* border: 1px  solid seagreen; */
+}
+
+.proje-img{
+    border-radius: 3px;
+}
+.proj-img-box{
+    display: flex;
+    align-items: center;
+}
+
+
+/* <!--Recent Projects Section Ends Here --> */
+
+
+
+
+
+
+/* Profile image */
+.shape-border-6 {
+    width: 100%;
+    height: auto;
+    background: #848484;              /* border color */
+    padding: 1px;                 /* border thickness */
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        85% 0%,
+        100% 30%,
+        100% 100%,
+        0% 100%,
+        15% 100%,
+        0% 75%,
+        0% 30%
+    );
+}
+.shape6 {
+    width: 100%;
+    height: 100%;
+    background: var(--prim-color);
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        85% 0%,
+        100% 14%,
+        100% 100%,
+        0% 100%,
+        15% 100%,
+        0% 85%,
+        0% 30%
+    );
+}
+
+
+/* <!-- Our Journey So Far Section Starts Here --> */
+.shape-border {
+    width: 143px;
+    height: 50px;
+    background: #848484;              /* border color */
+    padding: 1px;                 /* border thickness */
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        85% 0%,
+        100% 30%,
+        100% 100%,
+        0% 100%,
+        15% 100%,
+        0% 75%,
+        0% 30%
+    );
+}
+
+.shape {
+    width: 100%;
+    height: 100%;
+    background: var(--prim-white);
+    border-radius: 3px;
+    clip-path:polygon(
+        0% 0%,
+        85% 0%,
+        100% 30%,
+        100% 100%,
+        0% 100%,
+        15% 100%,
+        0% 75%,
+        0% 30%
+    );
+}
+
+
+/* <!-- Our Journey So Far Section Ends Here --> */
+
+.marquee-container{
+    background-color: #00000081;
+    color: var(--prim-white);
+    display: flex;
+}
+
+
+/* Our Gallery Section Starts Here */
+.gallery-img{
+    object-fit: cover;
+}
+
+/* Our Gallery Section Ends Here */
+
+
+/* Get In Touch Section Starts Here */
+
+.get-in-section{
+    background:#c8c8c82c;
+    /* border:1px solid orange; */
+}
+.get-in-row{
+    justify-content: space-between;
+}
+.get-in-row p{
+    margin-bottom: 2px !important;
+}
+
+
+/* Get In Touch Section Ends Here */
+
+
+
+
+/* Sticky Footer Section Starts Here */
+.sticky-footer {
+    background: #818181;
+    position: fixed;
+    bottom: 0;
+}
+
+.sticky-footer .fa-brands {
+    font-size: 20px;
+    color: white;
+}
+.icon-area{
+    /* border:1px solid red; */
+    height: 100%;
+}
+.sticky-icon{
+    margin: 10px auto;
+    align-items: center;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+/* Sticky Footer Section Ends Here */
+
+
+
+
+
+/* Revolving Years */
+@keyframes rotate360{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
