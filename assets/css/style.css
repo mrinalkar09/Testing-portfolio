@@ -179,6 +179,9 @@ h1,h2.h3{
 /* Force mobile-width view on desktop */
 
 
+
+
+
 /* Desktop background (optional – like kranti.clarionit.in) */
 @media (min-width: 768px) {
     body {
@@ -202,10 +205,15 @@ h1,h2.h3{
 /* Hero version 2 Starts Here */
 /* Stack container must reserve space */
 .my-stack {
+    /* border: 2px solid red; */
     position: relative;
-    min-height: 300px; /* adjust if needed */
-    margin: 50px;
+    min-height: 350px; /* adjust if needed */
+    margin: 50px 0 0 0;
+    overflow: hidden;
 }
+
+
+
 
 /* All stack boxes */
 .stack-box {
@@ -217,6 +225,22 @@ h1,h2.h3{
     background: #fff;
     overflow: hidden;
 }
+
+.pro-ele1{
+    top: 35px;
+    position: absolute;
+}
+
+.pro-ele2{
+    padding: 0px !important;
+    bottom: 70px;
+    position: absolute;
+}
+.pro-ele2{
+    transform: rotate(180deg);
+}
+
+
 
 /* Red box */
 .box-red {
@@ -275,7 +299,7 @@ h1,h2.h3{
 
 /* Yellow (main image) box */
 .box-yellow {
-    clip-path: polygon(
+    /* clip-path: polygon(
         0% 0%,
         85% 0%,
         100% 15%,
@@ -284,9 +308,11 @@ h1,h2.h3{
         15% 100%,
         0% 85%,
         0% 30%
-    );
+    ); */
+    border-radius: 40px 10px 40px 10px;
+    box-shadow: 5px 4px 8.3px rgba(0, 0, 0, 0.3);
     width: 100%;
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
     z-index: 3;
     position: absolute;
 }
@@ -331,7 +357,7 @@ h1,h2.h3{
 }
 .bt-grey {
     font-family: 'Raleway', sans-serif;
-    padding: 5px 10px;
+    padding: 8px 20px;
     color: var(--prim-white);
     width: 100%;
     height: 100%;
@@ -460,7 +486,7 @@ h1,h2.h3{
     justify-content: center;
 }
 .service-card{
-    padding: 10px;
+    padding: 16px;
     margin: 25px 0px;
     border-radius:3px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -545,7 +571,7 @@ h1,h2.h3{
 }
 .shape-border {
     width: 143px;
-    height: 50px;
+    height: 100%;
     background: #848484;              /* border color */
     padding: 1px;                 /* border thickness */
     border-radius: 3px;
@@ -564,6 +590,7 @@ h1,h2.h3{
 .shape {
     width: 100%;
     height: 100%;
+    padding: 6px 10px;
     background: var(--prim-white);
     border-radius: 3px;
     clip-path:polygon(
@@ -622,8 +649,8 @@ h1,h2.h3{
 
 .touch-v2-det{
     margin: 5px 0;
-    font-weight: var(--raj-regular);
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
 }
 /* Get In Touch V2 Section Ends Here */
 
