@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +10,8 @@
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 
     <!-- Font Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,62 +19,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
+    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     
 </head>
 <body>
 
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#achievements" onclick="closeNav()">Achievements</a>
+        <a href="#services" onclick="closeNav()">Services</a>        
+        <!-- <a href="#brochure" onclick="closeNav()">Brochure</a> -->
+        <a href="#projects" onclick="closeNav()">Projects</a>
+        <a href="#gallery" onclick="closeNav()">Gallery</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+</div>
 <!-- Navbar Section Starts Here-->
+
+
 <div class="container mrinal">
     <div class="left-logo">
         <img src="/assets/img/logo.svg">
     </div>
     <div class="right-menu">
-        <img src="/assets/img/menu-bar.svg">
+        <div class="menu-btn-1" onclick="openNav()">
+            <span></span>
+        </div>
+        <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
     </div>
 </div>
 
 
 <!-- Hero Section Starts Here -->
-<div class="container heroo">
-    <div class="hero-wrapper">
-        <div class="bg-box2"></div>
-        <div class="bg-box"></div>
-        <div class="hero-image">
-            <img src="/assets/img/profileimage.png" alt="Profile Image">
-        </div>
-
-    </div>
-</div>
-
-        
-
-<div class="container title">
-    <div class="row">
-        <div class="col-10 px-4"> 
-            <h1 class="mf-35 main-title ">
-                <span class="t-color">Engineering </span>the web, one line at a time.
-                Wher the engineering lies
-            </h1>
-        </div>
-        <div class="col-2">
-
+<div class="container my-stack">
+    <div class="row justify-content-center position-relative">
+        <div class="col-10 stack-box box-red"></div>
+        <div class="col-10 stack-box box-white"></div>
+        <div class="col-10 stack-box box-green"></div>
+        <div class="col-10 stack-box box-yellow">
+            <div class="hero-image">
+                <a href="/assets/img/profileimage2.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/profileimage2.png" alt="Porfile Image">
+                </a>
+            </div>
         </div>
     </div>
 </div>
+<!-- Hero Section End Here -->
 
-<div class="container px-4">
+<!--Hero Content Section Starts Here -->
+<div class="container ps-4">
     <div class="row">
         <div class="col-10">
             <div class="greet ">
-                <h3 class="mf-20 "> 
+                <h3 class="mf-28 fw-reg mb-0"> 
                     Hi,I am
                 </h3>
             </div>
             <div class=" Name">
-                <h2 class="mf-25"> Mrinalkar Khobragade</h2>
+                <h2 class="mf-28 mb-0"> Mrinalkar Khobragade</h2>
             </div>
             <div class=" designation">
-                <h4 class="mf-12"> (Front-end Developer / UI Designer)</h4>
+                <h4 class="mf-14 "> (Front-end Developer / UI Designer)</h4>
+            </div>
+            <div class="desc mt-2">
+                <p class=" mf-14 fw-reg ">We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready web and software solutions</p>
+            </div>
+            <div class="row mt-2" >
+                <div class="col-3" style=" width:auto;">
+                    <div class="bt-grey">
+                        <div class="Counterss mf-14 fw-sb">
+                            <i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;Let’s Connect
+                        </div>
+                    </div>  
+                </div>
+
             </div>
         </div>
         <div class="col-2 hero-social">
@@ -93,59 +117,101 @@
             </div>
         </div>
     </div>
-    <div class="row details" > 
-        <!-- <div class="col-9 button-area" >
-            <div class="col-4 call-bt">
-                    Call Now
-            </div>
-            <div class="col-4 email-bt">
-                    Email
-            </div>
-        </div>-->
-    </div> 
-    <div class="row details" > 
-        <div class="col-9 button-area" >
-            <div class="col-4">
-                    <button class="custom-btn  btn-16 mf-14"><Span class="explore-text">Call</Span> Now</button>
-            </div>
-            <div class="col-4 ">
-                    <button class="custom-btn btn-16 mf-14">Email</button>
+</div>
+<!--Hero Content Section Ends Here -->
+
+<!-- Seperator Line Here  -->
+<div class="container-fluid overflow-hidden my-4 p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                    <img src="/assets/img/zip.png" alt="">
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Hero Section Ends Here -->
+<!-- Seperator Line Here -->
+
+
 
 <!-- About Section Starts Here -->
 <div class="container about-section px-3 mt-4 mb-4">
     <div class="row">
-        <div class="col-9 mb-3">
-            <h3 class="mf-24 fw-nor"> ABOUT </h3>
-            <h1 class="mf-22 fw-bold">Designing future <br><span class="tagline-text">-ready technology</span></h1>
-            <p class=" mf-14 fw-reg ">We provide clean, efficient, and future-ready web and software solutions</p>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="mf-24 fw-nor">ABOUT THE COMPANY</h3>
+                </div>
+                <div class="col-4">
+                    <img src="/assets/img/svg/title-icon.svg" alt="" class="heading-icon">
+                </div>
+            </div>
         </div>
-        <div class="offset-3 col-9 mb-3 text-end">
-            <h3 class="mf-24 fw-nor"> VISION </h3>
-            <p class=" mf-14 fw-reg ">We provide clean, efficient, and future-ready web and software solutions</p>
+        <div class="col-12 about-desc">
+            <p >We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready.</p>
         </div>
-        <div class="col-9 mb-3">
-            <h3 class="mf-24 fw-nor"> MISSION </h3>
-            <p class=" mf-14 fw-reg ">To build innovative, scalable software and web solutions that solve real problems and deliver exceptional user experiences.</p>
+        <div class="col-12 mt-4 text-end">
+            <div class="row">
+                <div class="col-6 p-0">
+                    <img src="/assets/img/svg/title-icon-left.svg" alt="" class="heading-icon">
+                </div>
+                <div class="col-6">
+                    <h3 class="mf-24 fw-nor">OUR VISION</h3>
+                </div>
+            </div>
+            <div class="col-12 about-desc">
+                <p>We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready web and software solutions We provide clean, efficient, and future-ready.</p>
+            </div>
         </div>
+        <!-- <div class="col-12 my-4">
+            <h3>OUR MISSION </h3>
+            <p>To build innovative, scalable software and web solutions that solve real problems and deliver exceptional user experiences. To build innovative, scalable software and web solutions that solve real problems and deliver exceptional user experiences.</p>
+            <div class="revol-years">
+                <img src="/assets/img/svg/revolving.svg" alt="">
+            </div>
+        </div> -->
+        <div class="col-12 mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mf-24 fw-nor">OUR MISSION</h3>
+                </div>
+                <div class="col-6 p-0">
+                    <img src="/assets/img/svg/title-icon.svg" alt="" class="heading-icon">
+                </div>
+            </div>
+            <div class="col-12 about-desc">
+                <p>To build innovative, scalable software and web solutions that solve real problems and deliver exceptional user experiences. To build innovative, scalable software and web solutions that solve real problems and deliver exceptional user experiences.</p>
+            </div>
+        </div>
+        
     </div>
 </div>
 <!-- About Section Ends Here -->
 
-<!-- Achievement Section Starts Here -->
+<!-- Achievement Gallery Section Starts Here -->
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-4 overflow-hidden p-0">
+            <img src="/assets/img/svg/title-icon-left.svg" alt="">
+        </div>
+        <div class="col-8 text-end">
+            <h3 class="mf-24 fw-nor ">OUR ACHIVEMENTS</h3>
+        </div>
+    </div>
+</div>
 
-<!-- Gallery 2 Starts Here -->
-<div class="container position-relative px-4 mt-4 mb-4">
+
+<div class="container position-relative px-4 mt-4 mb-4" id="achievements">
     <div class="row">
         <div class="col-6 gallery2-img-box ">
             <div class="shape-border2">
                 <div class="shape2 px-3 py-1">
-                    <div class="Counterss">
-                        <img class="img-fluid" src="/assets/img/certificate.png" alt="">
+                    <div class="Counterss mx-1">
+                        <a href="/assets/img/certificate.png" class="glightbox">
+                            <img class="img-fluid" src="/assets/img/certificate.png" alt="Achievement Images">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -153,8 +219,21 @@
         <div class="col-6 gallery2-img-box ">
             <div class="shape-border2">
                 <div class="shape2 px-3 py-1">
-                    <div class="Counterss">
-                        <img class="img-fluid" src="/assets/img/certificate.png" alt="">
+                    <div class="Counterss mx-1">
+                        <a href="/assets/img/certificate.png" class="glightbox">
+                            <img class="img-fluid" src="/assets/img/certificate.png" alt="Achievement Images">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="col-6 gallery2-img-box ">
+            <div class="shape-border2">
+                <div class="shape2 px-3 py-1">
+                    <div class="Counterss mx-1">
+                        <a href="/assets/img/certificate.png" class="glightbox">
+                            <img class="img-fluid" src="/assets/img/certificate.png" alt="Achievement Images">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,191 +241,95 @@
         <div class="col-6 gallery2-img-box ">
             <div class="shape-border2">
                 <div class="shape2 px-3 py-1">
-                    <div class="Counterss">
-                        <img class="img-fluid" src="/assets/img/certificate.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 gallery2-img-box ">
-            <div class="shape-border2">
-                <div class="shape2 px-3 py-1">
-                    <div class="Counterss">
-                        <img class="img-fluid" src="/assets/img/certificate.png" alt="">
+                    <div class="Counterss mx-1">
+                        <a href="/assets/img/certificate.png" class="glightbox">
+                            <img class="img-fluid" src="/assets/img/certificate.png" alt="Achievement Images">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div> 
-    <div class="revol-years">
+    <!-- <div class="revol-years">
         <img src="/assets/img/svg/revolving.svg" alt="">
-    </div>
+    </div> -->
 </div>
-<!-- Gallery 2 Ends Here -->
 
-
-<!-- Achievement Section Ends Here -->
-
+<!-- Achievement Gallery Section Ends Here -->
 
 <!-- Our Services Section Starts Here -->
-<div class="container px-4 mt-4 pb-3">
+<div class="container mt-4">
     <div class="row">
-        <div class="offset-3 col-9 text-end">
-            <h3 class="mf-24 fw-nor mb-3"> OUR SERVICES </h3>
-            <!-- <p class=" mf-14 fw-reg ">We provide clean, efficient, and future-ready web and software solutions</p> -->
+        <div class="col-6 ps-4">
+            <h3 class="mf-24 fw-nor ">OUR SERVICES</h3>
         </div>
-        <div class="col-6 mb-3 ">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title mf-18 fw-bold">SOFTWARE DEVELOPMENT </h3>
-                    <p class=" card-text mf-14 fw-reg">A custom software solution built for efficiency, scalability & long-term performance.</p>
-                    <!-- See More Button -->
-                        <div class="row">
-                            <div class="col-6 "> 
-                                <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                            </div>
-                            <div class="col-6 con-btnn"> 
-                                <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                            </div>
-                        </div>
-                </div>
+        <div class="col-6 overflow-hidden">
+            <img src="/assets/img/svg/title-icon.svg" alt="">
+        </div>
+    </div>
+</div>
+<!-- All Services Starts Here -->
+<div class="container my-3 px-3">
+    <div class="row mx-2 ser-card-list">
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>SOFTWARE DEVELOPMENT</h3>
+            </div>
+            <div class="ser-desc">
+                <p>A custom software solution built for efficiency, scalability & long-term performance.</p>
             </div>
         </div>
-        <div class="col-6 mb-3">
-            <div class="card ">
-                <div class="card-body">
-                  <h3 class="card-title mf-18 fw-bold">FULL STACK DEVELOPMENT</h3>
-                  <p class="card-text mf-14 fw-reg">An end-to-end development approach covering frontend, backend & integration.</p>
-                  <!-- See More Button -->
-                    <div class="row">
-                        <div class="col-6"> 
-                            <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                        </div>
-                        <div class="col-6 con-btnn"> 
-                            <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>FULL STACK DEVELOPMENT</h3>
+            </div>
+            <div class="ser-desc">
+                <p>An end-to-end development approach covering frontend, backend & system integration.</p>
             </div>
         </div>
-        <div class="col-6 mb-3">
-            <div class="card ">
-                <div class="card-body">
-                  <h3 class="card-title mf-18 fw-bold">UI/UX DESIGNING</h3>
-                  <p class="card-text mf-14 fw-reg">A user-focused design approach delivering intutive & engaging experiences.</p>
-                  <!-- See More Button -->
-                    <div class="row">
-                        <div class="col-6"> 
-                            <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                        </div>
-                        <div class="col-6 con-btnn"> 
-                            <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>UI/UX DESIGNING</h3>
+            </div>
+            <div class="ser-desc">
+                <p>A user-focused design approach delivering intuitive interfaces & engaging experiences.</p>
             </div>
         </div>
-        <div class="col-6 mb-3 ">
-            <div class="card ">
-                <div class="card-body">
-                  <h3 class="card-title mf-18 fw-bold">IOT DEVELOPMENT</h3>
-                  <p class="card-text mf-14 fw-reg">A smart IoT development approach enabling connection & real-time insights.</p>
-                  <!-- See More Button -->
-                    <div class="row">
-                        <div class="col-6"> 
-                            <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                        </div>
-                        <div class="col-6 con-btnn"> 
-                            <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>IOT DEVELOPMENT</h3>
+            </div>
+            <div class="ser-desc">
+                <p>A smart IoT development approach enabling connected devices & real-time insights.</p>
             </div>
         </div>
-        <div class="col-6 mb-3">
-            <div class="card" >
-                <div class="card-body">
-                    <h3 class="card-title mf-18 fw-bold">CONSULTING & STRATEGY</h3>
-                    <p class="card-text mf-14 fw-reg">A strategic consulting approach focused on clarity, growth & data-driven decision making.</p>
-                    <!-- See More Button -->
-                      <div class="row">
-                          <div class="col-6"> 
-                              <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                          </div>
-                          <div class="col-6 con-btnn"> 
-                              <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                          </div>
-                      </div>
-                </div>
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>CONSULTING & STRATEGY</h3>
+            </div>
+            <div class="ser-desc">
+                <p>A strategic consulting approach focused on clarity, growth & data-driven decision making.</p>
             </div>
         </div>
-        <div class="col-6 mb-3">
-            <div class="card" >
-                <div class="card-body">
-                    <h3 class="card-title mf-18 fw-bold">WEB APP DEVELOPMENT</h3>
-                    <p class="card-text mf-14 fw-reg">A scalable web application designed for performance, security & seamless  experience </p>
-                    <!-- See More Button -->
-                    <div class="row">
-                        <div class="col-6 "> 
-                            <a href="#" class="card-link"><Span class="see-btnn">See</Span> More</a>
-                        </div>
-                        <div class="col-6 con-btnn"> 
-                            <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div class="col-12 service-card position-relative">
+            <div class="ser-tit"> 
+                <h3>WEB APP DEVELOPMENT</h3>
+            </div>
+            <div class="ser-desc">
+                <p>A scalable web application designed for performance, security & seamless  experience </p>
             </div>
         </div>
     </div>
     <div class="row explore">
-        <div class="col-6  text-center">
-            <button class="custom-btn btn-16 mf-12"><Span class="explore-text">Explore</Span> More Services</button>
+        <div class="col-6 text-center">
+            <button class="custom-btn btn-16 mf-16"><Span class="explore-text">Explore</Span> More Services</button>
         </div>
     </div>
 </div>
-
-<style>
-
-button {
-    margin: 20px;
-}
-.custom-btn {
-    width: max-content;
-    height: auto;
-    border: 0.5px solid var(--prim-color);
-    color: var(--prim-color);
-    border-radius: 5px;
-    margin: auto;
-    padding: 2px 10px;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    }
-.btn-16:hover {
-    color: #000;
-}
-.btn-16:hover:after {
-    left: auto;
-    right: 0;
-    width: 100%;
-}
-.btn-16:active {
-    top: 2px;
-}
-</style>
-
-<!-- Our Services Section Ends Here -->
-
-
+<!-- All Services Ends Here -->
 
 <!-- Download Brochure Section  Starts Here -->
-<div class="container-fluid brochure-section mt-4"> 
+<div class="container-fluid brochure-section mt-4" id="brochure"> 
     <div class="row text-center p-3">
         <div class="col-12 ">
             <h3 class="mf-16 fw-sb">
@@ -354,14 +337,12 @@ button {
             </h3>
         </div>
         <div class="col-12 text-center">
-            <button class="custom-btn btn-16 mf-12">Download Brochure</button>
+            <button class="custom-btn btn-16 mf-16 fw-nor ">Download Brochure</button>
             <!-- <button type="button" class="explore-btn mf-10  ">Download Brochure</button> -->
-
         </div>
     </div>
 </div>
 <!-- Download Brochure Section Ends Here -->
-
 
 
 <!-- Marque Aniamtion Line Starts Here-->
@@ -375,17 +356,29 @@ button {
 <!-- Marque Aniamtion Line Ends Here-->
 
 
-
-<!--Recent Projects Section Starts Here -->
-<div class="container recent-proj-section px-4 mt-4 mb-4 ">
+<!--Recent Projects Title Section Starts Here -->
+<div class="container">
     <div class="row">
+        <div class="col-7 ps-4">
+            <h3 class="mf-24 fw-nor ">RECENT PROJECTS</h3>
+        </div>
+        <div class="col-5 overflow-hidden">
+            <img src="/assets/img/svg/title-icon.svg" alt="">
+        </div>
+    </div>
+</div>
+<!--Recent Projects Section Starts Here -->
+<div class="container recent-proj-section px-4 mt-4 mb-4 " id="projects">
+    <!-- <div class="row">
         <div class="col-9 ">
             <h3 class="mf-24 fw-nor"> RECENT PROJECTS </h3>
         </div>
-    </div>
+    </div> -->
     <div class="row project-roww pt-4 mb-4">
         <div class="col-4 proj-img-box " >
-            <img class= " proje-img img-fluid" src="/assets/img/project.png" alt="">
+            <a href="/assets/img/project.png" class="glightbox">
+                <img class= " proje-img img-fluid" src="/assets/img/project.png" alt="Recent Projets">
+            </a>
         </div>
         <div class="col-8 text-end ">
             <h3 class="mf-18 fw-bold mb-0">Project Title </h3>
@@ -400,12 +393,16 @@ button {
             <p class=" mf-14 fw-nor ">A web application designed to solve a specific business need by providing a fast, secure, and user-friendly digital solution. The project focuses on </p>
         </div>
         <div class="col-4 proj-img-box text-end ">
-            <img class=" proje-img img-fluid" src="/assets/img/project.png" alt="">
+            <a href="/assets/img/project.png" class="glightbox">
+                <img class= " proje-img img-fluid" src="/assets/img/project.png" alt="Recent Projets">
+            </a>
         </div>
     </div>
     <div class="row project-roww pt-4 mb-4">
         <div class="col-4 proj-img-box" >
-            <img class="proje-img img-fluid" src="/assets/img/project.png" alt="">
+            <a href="/assets/img/project.png" class="glightbox">
+                <img class= " proje-img img-fluid" src="/assets/img/project.png" alt="Recent Projets">
+            </a>
         </div>
         <div class="col-8 text-end ">
             <h3 class="mf-18 fw-bold mb-0">Project Title </h3>
@@ -420,23 +417,32 @@ button {
             <p class=" mf-14 fw-nor ">A web application designed to solve a specific business need by providing a fast, secure, and user-friendly digital solution. The project focuses on </p>
         </div>
         <div class="col-4 proj-img-box text-end ">
-            <img class="proje-img img-fluid" src="/assets/img/project.png" alt="">
+            <a href="/assets/img/project.png" class="glightbox">
+                <img class= " proje-img img-fluid" src="/assets/img/project.png" alt="Recent Projets">
+            </a>
         </div>
     </div>
 </div>
-
-
 <!--Recent  Project Section Ends Here -->
 
-
 <!-- Our Journey So Far Section Starts Here -->
-<div class="container px-4 mt-4 mb-4">
+<div class="container-fluid mt-4 ">
     <div class="row">
+        <div class="col-4 overflow-hidden p-0">
+            <img src="/assets/img/svg/title-icon-left.svg" alt="">
+        </div>
+        <div class="col-8 pe-4 text-end">
+            <h3 class="mf-24 fw-nor ">OUR JOURNEY SO FAR</h3>
+        </div>
+    </div>
+</div>
+<div class="container px-4 mt-2 mb-4">
+    <!-- <div class="row">
         <div class="offset-3 col-9 text-end">
             <h3 class="mf-24 fw-nor">OUR JOURNEY SO FAR</h3>
         </div>
-    </div>
-    <div class="row">
+    </div> -->
+    <div class="row counter-roww">
         <div class="col-6 mb-3">
             <div class="shape-border">
                 <div class="shape px-2 py-1">
@@ -481,109 +487,210 @@ button {
 </div>
 <!-- Our Journey So Far Section Ends Here -->
 
-
 <!-- Our Gallery Section Starts Here -->
-<div class="container gallery-section mt-4 mb-4 px-4">
-    <div class="row ">
-        <div class="col-9 ">
-            <h3 class="mf-24 fw-nor"> GALLERY </h3>
-        </div>
-    </div>
+<div class="container">
     <div class="row">
-        <div class="col-6 position-relative">
-            <div class="gallery-img">
-                <img class="img-fluid" src="/assets/img/Working.png" alt="">
-            </div>
-            <!-- <div class="col-6 position-relative" style="width: 100% ; bottom:0 ; background: black; height: 20px;">
-                hey 
-            </div> -->
+        <div class="col-4 ps-4">
+            <h3 class="mf-24 fw-nor ">GALLERY</h3>
         </div>
-        <div class="col-6">
-            <div class="gallery-img">
-                <img class="img-fluid" src="/assets/img/Team.png" alt="">
-            </div>
-        </div> 
+        <div class="col-8 overflow-hidden">
+            <img src="/assets/img/svg/title-icon.svg" alt="">
+        </div>
     </div>
 </div>
 
+<div class="container gallery-section mt-2 mb-4 px-4" id="gallery">
+
+    <!-- <div class="row">
+        <div class="col-9">
+            <h3 class="mf-24 fw-nor"> GALLERY </h3>
+        </div>
+    </div> -->
+
+    <div class="row">
+
+        <!-- Gallery Item 1 -->
+        <div class="col-6 mb-3 gallery-item position-relative">
+            <div class="gallery-img">
+                <a href="/assets/img/Working.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Working.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="col-6 mb-3 gallery-item">
+            <div class="gallery-img">
+                <a href="/assets/img/Team.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Team.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="col-6 mb-3 gallery-item position-relative">
+            <div class="gallery-img">
+                <a href="/assets/img/Working.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Working.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="col-6 mb-3 gallery-item">
+            <div class="gallery-img">
+                <a href="/assets/img/Team.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Team.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="col-6 mb-3 gallery-item position-relative">
+            <div class="gallery-img">
+                <a href="/assets/img/Working.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Working.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="col-6 mb-3 gallery-item">
+            <div class="gallery-img">
+                <a href="/assets/img/Team.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Team.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="col-6 mb-3 gallery-item position-relative">
+            <div class="gallery-img">
+                <a href="/assets/img/Working.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Working.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="col-6 mb-3 gallery-item">
+            <div class="gallery-img">
+                <a href="/assets/img/Team.png" class="glightbox">
+                    <img class="img-fluid" src="/assets/img/Team.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Load More Button -->
+    <div class="row">
+        <div class="col-12 text-center ">
+            <button id="loadMoreBtn" type="button" class="btn px-4 btn-light">Load More <i class="fa-solid fa-angles-down" style="font-size: 12px;"></i></button>
+        </div>
+    </div>
+</div>
 
 <!-- Our Gallery Section Ends Here -->
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const items = document.querySelectorAll(".gallery-item");
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+    let visibleCount = 4;
+    const step = 2;
+
+    // Show first 4
+    items.forEach((item, index) => {
+        if (index < visibleCount) {
+            item.style.display = "block";
+        }
+    });
+
+    loadMoreBtn.addEventListener("click", function () {
+
+        for (let i = visibleCount; i < visibleCount + step; i++) {
+            if (items[i]) {
+                items[i].style.display = "block";
+            }
+        }
+
+        visibleCount += step;
+
+        if (visibleCount >= items.length) {
+            loadMoreBtn.style.display = "none";
+        }
+    });
+});
+</script>
 
 
-<!-- Get In Touch Section Starts Here -->
-
-<div class="container-fluid p-4 mt-4  get-in-section">
-    <div class="row get-in-row">
-        <div class="col-8">
-            <div class="row mf-14  fw-nor">
-                <div class="col-12">
-                    <p><i class="fa-brands fa-algolia">&nbsp;&nbsp;</i>Firm Name</p>
-                </div>
-                <div class="col-12">
-                    <p><i class="fa-solid fa-phone-volume">&nbsp;&nbsp;</i>7224877101 ,8827377101</p>
-                </div>
-                <div class="col-12">
-                    <p><i class="fa-solid fa-envelope">&nbsp;&nbsp;</i> mrinalkarkhobr123@gmail.com</p>
-                </div>
-                <div class="col-12">
-                    <p><i class="fa-solid fa-location-dot">&nbsp;&nbsp;</i> Raipur , Chhattisgarh (India), <br>Po: 492001</p>
-                </div>
-            </div>
+<!--Get in Touch V2 Starts Here  -->
+<div class="container-fluid get-zip">
+    <div class="row get-v2">
+        <div class="col-12 p-0">
+            <img src="/assets/img/zip.png" class="img-fluid" alt="Connecting Line">
         </div>
-        <div class="col-4 text-end">
-            <H1 class="mf-24 fw-sb"> Get <Br>In Touch</H1>
-            <img src="/assets/img/svg/see-more-arrow.svg" alt="">
-        </div>
-    </div>    
+    </div>
 </div>
 
-<!-- Get In Touch Section Ends Here -->
 
-
-<!-- Copyright Section Here -->
-<div class="container px-1">
+<div class="container pt-3 get-v2-section px-4">
+    <div class="row mt-3">
+        <div class="col-6 get-v2-tit">
+            <h3 class="mf-24 ">GET IN TOUCH</h3>
+        </div>
+        <div class="col-6 overflow-hidden p-0">
+            <img src="/assets/img/svg/title-icon.svg" alt="">
+        </div>
+    </div>
+    <div class="row ps-1 my-2">
+        <div class="col-10 touch-v2-det">
+            <i class="fa-brands fa-algolia"></i> &nbsp;&nbsp; Firm Name Here
+        </div>
+        <div class="col-10 touch-v2-det">
+            <i class="fa-solid fa-phone"></i> &nbsp;&nbsp; 7224877101 ,8827377101
+        </div>
+        <div class="col-10 touch-v2-det">
+            <i class="fa-solid fa-envelope"></i> &nbsp;&nbsp; mrinalkarkhobr123@gmail.com
+        </div>
+        <div class="col-10 touch-v2-det">
+            <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; Raipur , Chhattisgarh (India),<br>Po: 492001
+        </div>
+    </div>
+    <!-- Copyright Section Here -->
     <div class="row">
-        <div class="col-12 text-center">
-            <h3 class="mf-10 ">Crafted with ❤ By <span class="fw-nor">Clarion IT Pvt Ltd.</span></h3>
+        <div class="col-12 text-center pt-2" style="border-top:0.5px solid #cecece;">
+            <h3 class="mf-10 ">Crafted with <i class="fa fa-heart" style="font-size:10px;color:red"></i> By <span class="fw-nor">Clarion IT Pvt Ltd.</span></h3>
         </div>
     </div>
 
-
 </div>
-
+<!--Get in Touch V2 Ends Here  -->
 
 <!-- Extra Part for testing -->
-<!-- <div class="empty-space " style="width: auto; height: 150px;">
+<div class="empty-space " style="width: auto; height: 44px;">
 
-</div> -->
+</div>
 <!-- Remove the abouve part -->
-
-
-
 
 
 <!-- Sticky Footer Section Starts Here -->
 <div class="container-fluid sticky-footer">
-    <div class="row " >
+    <div class="row stic-foot" >
         <div class="col-2 icon-area">
             <div class="sticky-icon ">
                 <img src="/assets/img/svg/sticky-call-icon.svg" alt="">
             </div>
         </div>
         <div class="col-2 icon-area">
-            <div class="sticky-icon ">
-                <img src="/assets/img/svg/sticky-mail-icon.svg" alt="">
+            <div class="sticky-icon " style="width: 80%;height:auto;">
+                <i class="fa-solid fa-envelope"></i>
             </div>
         </div>
         <div class="col-2 icon-area">
             <div class="sticky-icon ">
                 <img src="/assets/img/svg/sticky-whatsapp-icon.svg" alt="">
-            </div>
-        </div>
-        <div class="col-2 icon-area">
-            <div class="sticky-icon ">
-                <img src="/assets/img/svg//sticky-telegram-icon.svg" alt="">
             </div>
         </div>
         <div class="col-2 icon-area">
@@ -601,10 +708,82 @@ button {
 
 <!-- Sticky Footer Section Ends Here -->
 
-<script src="/assets/js/main.js"></script>
+
+<style>
+
+button {
+    margin: 20px;
+}
+.custom-btn {
+    width: max-content;
+    height: auto;
+    border: 0.5px solid var(--prim-color);
+    color: var(--prim-color);
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    outline: none;
+    }
+.btn-16:hover {
+    color: #000;
+}
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-16:active {
+    top: 2px;
+}
+
+.explore{
+    justify-content: center;
+}
+
+.explore-btn{
+    border: 0.75px solid var(--prim-color);
+    border-radius: 2px;
+}
+
+
+.explore-text{
+    font-weight: var(--raj-bold);
+    color: var(--prim-color);
+}
+
+</style>
+
+<!-- Sticky Footer Section Ends Here -->
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<script>
+    function menuBtnFunction(menuBtn) {
+        menuBtn.classList.toggle("active");
+}
+</script>
+
+<script>
+    GLightbox();
+</script>
+
+
 </body>
 </html>
-
-
 
 
